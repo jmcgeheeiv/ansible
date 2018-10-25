@@ -97,7 +97,7 @@ Running Ansible Manually
 ````````````````````````
 
 Sometimes you may want to run Ansible manually against the machines. This is
-faster than kicking ``vagrant provision`` and pretty easy to do.
+faster than running ``vagrant provision`` and rather easy to do.
 
 With our ``Vagrantfile`` example, Vagrant automatically creates an Ansible
 inventory file in ``.vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory``.
@@ -130,14 +130,14 @@ automatically configures for each new VM (each key is stored in a path like
 
     $ ansible-playbook --private-key=.vagrant/machines/default/virtualbox/private_key -u vagrant -i .vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory playbook.yml
 
-Advanced Usages
+Advanced Usage
 ```````````````
 
 The "Tips and Tricks" chapter of the `Ansible Provisioner documentation
 <https://www.vagrantup.com/docs/provisioning/ansible.html>`_ provides detailed information about more advanced Ansible features like:
 
-  - how to parallely execute a playbook in a multi-machine environment
-  - how to integrate a local ``ansible.cfg`` configuration file
+  - Execute a playbook in parallel in a multi-machine environment
+  - Integrate a local ``ansible.cfg`` configuration file
 
 .. seealso::
 
